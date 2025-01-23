@@ -6,6 +6,7 @@ import { Third } from "./components/Third";
 import Layout from "./components/user/Layout";
 import Homepage from "./pages/Homepage";
 import Productpages from "./pages/Productpages";
+import ProductDetail from "./pages/ProductDetail";
 
 
 const Myroute = () => {
@@ -16,6 +17,7 @@ const Myroute = () => {
           <Route path="/" element={<Layout />}>
             <Route index element={<Homepage />} />
             <Route path="product" element={<Productpages />} />
+            <Route path="productdetail/:productId" element={<ProductDetail />} />
           </Route>
         
         </Routes>
