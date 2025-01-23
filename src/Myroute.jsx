@@ -7,6 +7,7 @@ import Layout from "./components/user/Layout";
 import Homepage from "./pages/Homepage";
 import Productpages from "./pages/Productpages";
 import ProductDetail from "./pages/ProductDetail";
+import Cartpage from "./pages/Cartpage";
 
 
 const Myroute = () => {
@@ -18,6 +19,7 @@ const Myroute = () => {
             <Route index element={<Homepage />} />
             <Route path="product" element={<Productpages />} />
             <Route path="productdetail/:productId" element={<ProductDetail />} />
+            <Route path="cart" element={<Cartpage/>} />
           </Route>
         
         </Routes>
